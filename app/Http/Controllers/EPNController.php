@@ -38,7 +38,7 @@ class EPNController extends Controller
             return response()->json($epn->LastError());
         }
 
-        $data = $categories + $topPhones;
+        $data = [...[$categories], ...[$topPhones]];
 
         // Возвращаем данные в вашем формате
         return response()->json($data);
