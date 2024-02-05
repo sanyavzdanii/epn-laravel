@@ -19,6 +19,7 @@ class EPNProduct extends Model
         'prices',
         'price',
         'lowest_price',
+        'currency',
         'affiliate_link',
         // Добавьте другие поля, которые вам нужны
     ];

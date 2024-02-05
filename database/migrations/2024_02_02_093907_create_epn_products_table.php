@@ -23,6 +23,7 @@ class CreateEPNProductsTable extends Migration
             $table->json('prices');
             $table->float('price', 14, 2);
             $table->float('lowest_price', 14, 2)->default(0.00);
+            $table->string('currency');
             $table->string('affiliate_link');
             $table->timestamps();
         });
