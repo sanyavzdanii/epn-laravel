@@ -18,4 +18,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/epn/goods/{page}', [EPNController::class, 'getEPNGoods']);
+Route::get('/api/epn/goods/{page}', [EPNController::class, 'getEPNGoods']);
